@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!--Bootstrap 4 CDN-->
+   <link rel="stylesheet" href="hangman.css">
+   
+   <title>Hangman</title>
+
+    
+</head>
+<body>
+   
+    <div class="container">
+
+        <h1 class="text-center">Hangman</h1>
+        <div class="float">Guesses used <span id="mistakes">0</span> of <span id="maxWrong"></span></div>
+        <br>
+        <div class="text-center">
+            <img id="hangmanImg" src="hangman0.png" alt="hangman pole" >
+            <p class="Gen1">Guess the Gen1 starter name/form:</p>
+            
+            <p id="guessedWord">guessed word goes here</p>
+            <div id="keyboard"></div>
+            <button class="btn-reset" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    <script src="hangMan.js"></script><!--script is here so it loads after all the elements else you will get errors since the rest of the body "doesnt exist"-->
+</body>
+</html>
